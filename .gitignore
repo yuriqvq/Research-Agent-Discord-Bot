@@ -1,0 +1,14 @@
+# 環境與密鑰
+.env
+
+# 執行時產生的資料
+data/
+reports/
+logs/
+cache/
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/

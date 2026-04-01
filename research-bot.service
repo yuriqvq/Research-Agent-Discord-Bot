@@ -1,0 +1,17 @@
+[Unit]
+Description=Research Agent Discord Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=%i
+WorkingDirectory=/path/to/Research-Agent
+ExecStart=/usr/bin/python3 /path/to/Research-Agent/bot.py
+Restart=always
+RestartSec=10
+Environment=PYTHONUNBUFFERED=1
+EnvironmentFile=/path/to/Research-Agent/.env
+
+[Install]
+WantedBy=multi-user.target
